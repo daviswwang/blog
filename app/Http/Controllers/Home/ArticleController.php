@@ -26,7 +26,7 @@ class ArticleController extends Controller
             ->paginate(10);
 
         $head = [
-            'title'       => config('bjyblog.head.title'),
+            'title'       => 11111111,
             'keywords'    => config('bjyblog.head.keywords'),
             'description' => config('bjyblog.head.description'),
         ];

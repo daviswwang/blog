@@ -21,20 +21,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            {{ config('app.name') }}
             @if(Str::isTrue(config('bjyblog.logo_with_php_tag')))
                 <a class="navbar-brand" href="/">
                     <div class="hidden-xs b-nav-background"></div>
-                    <ul class="b-logo-code">
-                        <li class="b-lc-start">&lt;?php</li>
-                        <li class="b-lc-echo">echo</li>
-                    </ul>
-                    <p class="b-logo-word">'{{ config('app.name') }}'</p>
-                    <p class="b-logo-end">;</p>
+                    <p class="b-logo-word">{{ config('app.name1') }}</p>
                 </a>
             @else
                 <a class="navbar-brand" href="/">
                     <div class="hidden-xs b-nav-background"></div>
-                    <p class="b-logo-word">{{ config('app.name') }}</p>
+                    <p class="b-logo-word">{{ config('app.name1') }}</p>
                 </a>
             @endif
         </div>

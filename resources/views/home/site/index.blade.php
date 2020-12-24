@@ -8,31 +8,31 @@
 
 @section('content')
     <div class="col-xs-12 col-md-12 col-lg-8">
-        @if(Str::isTrue(config('bjyblog.breadcrumb')))
-            <div class="row">
-                <div class="col-xs-12 col-md-12 col-lg-12 b-breadcrumb">
-                    {{ Breadcrumbs::render() }}
-                </div>
-            </div>
-        @endif
-        <div class="row" id="b-content-site">
-            @foreach($site as $k => $v)
-                <div class="col-xs-12 col-md-4 col-lg-4 b-site">
-                    <ul class="b-s-inside">
-                        <li class="b-si-name">{{ $v->name }}</li>
-                        <li class="b-si-url">{{ $v->url }}</li>
-                        <li class="b-si-description">{{ $v->description }}</li>
-                    </ul>
-                    <a class="b-s-url" href="{{ $v->url }}" target="_blank"></a>
-                </div>
-            @endforeach
-            <div class="col-xs-12 col-md-4 col-lg-4 b-site">
-                <div class="b-s-inside">
-                    <img class="b-s-plus" src="{{ cdn_url('images/home/plus.png') }}">
-                    <a class="b-s-url js-add-site" href="javascript:;" ></a>
-                </div>
-            </div>
-        </div>
+        {{--@if(Str::isTrue(config('bjyblog.breadcrumb')))--}}
+            {{--<div class="row">--}}
+                {{--<div class="col-xs-12 col-md-12 col-lg-12 b-breadcrumb">--}}
+                    {{--{{ Breadcrumbs::render() }}--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--@endif--}}
+        {{--<div class="row" id="b-content-site">--}}
+            {{--@foreach($site as $k => $v)--}}
+                {{--<div class="col-xs-12 col-md-4 col-lg-4 b-site">--}}
+                    {{--<ul class="b-s-inside">--}}
+                        {{--<li class="b-si-name">{{ $v->name }}</li>--}}
+                        {{--<li class="b-si-url">{{ $v->url }}</li>--}}
+                        {{--<li class="b-si-description">{{ $v->description }}</li>--}}
+                    {{--</ul>--}}
+                    {{--<a class="b-s-url" href="{{ $v->url }}" target="_blank"></a>--}}
+                {{--</div>--}}
+            {{--@endforeach--}}
+            {{--<div class="col-xs-12 col-md-4 col-lg-4 b-site">--}}
+                {{--<div class="b-s-inside">--}}
+                    {{--<img class="b-s-plus" src="{{ cdn_url('images/home/plus.png') }}">--}}
+                    {{--<a class="b-s-url js-add-site" href="javascript:;" ></a>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
     </div>
 
     <!-- 申请模态框开始 -->

@@ -10,7 +10,6 @@
     @yield('css')
 </head>
 <body class="nav-md">
-
 @yield('body')
 
 <script src="{{ mix('js/admin.js') }}"></script>

@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'laravel-bjyblog'),
+    'name1' => 'ww1',
+
+    'name' => 'ww2',
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +54,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => '2222',
 
     'asset_url' => env('ASSET_URL', null),
 
